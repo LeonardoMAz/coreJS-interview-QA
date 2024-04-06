@@ -3,6 +3,7 @@
 </h3>
 
 - [JavaScript](#javascript)
+- [Различия между `let`, `const` и `var` в JavaScript](#различия-между-let-const-и-var-в-javascript)
   - [Parsing (Парсинг), Reflow (Пересчёт макета), и Repaint (Перерисовка)](#parsing-парсинг-reflow-пересчёт-макета-и-repaint-перерисовка)
     - [Parsing (Парсинг)](#parsing-парсинг)
     - [Reflow (Пересчёт макета)](#reflow-пересчёт-макета)
@@ -13,7 +14,7 @@
   - [Логические операторы](#логические-операторы)
   - [Условные операторы](#условные-операторы)
   - [Alert/prompt/confirm](#alertpromptconfirm)
-  - [Различия между `let`, `const` и `var` в JavaScript](#различия-между-let-const-и-var-в-javascript)
+  
   - [Виды функций и их отличия, hoisting](#виды-функций-и-их-отличия-hoisting)
   - [Деструктуризация и оператор распространения](#деструктуризация-и-оператор-распространения)
     - [Оператор распространения (Spread Operator)](#оператор-распространения-spread-operator)
