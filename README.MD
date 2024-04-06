@@ -8,6 +8,8 @@ Advanced Expressions
   - [Различия между `let`, `const` и `var` в JavaScript](#различия-между-let-const-и-var-в-javascript)
   - [Temporary Dead Zone](#temporary-dead-zone)
   - [Всплытие (Hoisting)](#всплытие-hoisting)
+
+Functions
   - [Виды функций и их отличия, hoisting](#виды-функций-и-их-отличия-hoisting)
 
   - [Parsing (Парсинг), Reflow (Пересчёт макета), и Repaint (Перерисовка)](#parsing-парсинг-reflow-пересчёт-макета-и-repaint-перерисовка)
