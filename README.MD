@@ -3,6 +3,8 @@
 </h3>
 
 - [JavaScript](#javascript)
+
+Advanced Expressions
   - [Различия между `let`, `const` и `var` в JavaScript](#различия-между-let-const-и-var-в-javascript)
   - [Temporary Dead Zone](#temporary-dead-zone)
   - [Всплытие (Hoisting)](#всплытие-hoisting)
