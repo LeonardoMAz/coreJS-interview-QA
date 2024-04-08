@@ -2,7 +2,7 @@
   <span>JavaScript Core</span>
 </h3>
 
-- [JavaScript](#javascript)
+- [JavaScriptTopics](#javascript)
 
 Advanced Expressions
   - [Различия между `let`, `const` и `var` в JavaScript](#различия-между-let-const-и-var-в-javascript)
@@ -11,6 +11,81 @@ Advanced Expressions
 
 Functions
   - [Виды функций и их отличия, hoisting](#виды-функций-и-их-отличия-hoisting)
+  - [Стрелочные функции vs Обычные функции](#стрелочные-функции-vs-обычные-функции)
+
+
+Functional Scope
+
+
+Functions Parameters / Arguments
+
+
+Closures Advanced
+  - [Как работают замыкания](#как-работают-замыкания)
+  - [Что такое контекст](#что-такое-контекст)
+  - [Что такое глобальный контекст](#что-такое-глобальный-контекст)
+  - [Как определяется контекст во время выполнения?](#как-определяется-контекст-во-время-выполнения)
+  - [Как привязать контекст, возможно ли привязать его дважды?](#как-привязать-контекст-возможно-ли-привязать-его-дважды)
+  - [Когда контекст теряется?](#когда-контекст-теряется)
+  - [Механизм обхода лексического окружения](#механизм-обхода-лексического-окружения)
+
+
+ECMAScript Intermediate
+  - [Параметры по умолчанию в функциях](#параметры-по-умолчанию-в-функциях)
+  - [Оператор расширения для аргументов функции (`...`)](#оператор-расширения-для-аргументов-функции-)
+
+Objects Built-in Methods
+
+  - [Methods of Object](#methods-of-object)
+    - [Object.keys()](#objectkeys)
+    - [Object.values()](#objectvalues)
+    - [for...in](#forin)
+  
+  - [Клонирование объектов в JavaScript](#клонирование-объектов-в-javascript)
+  - [Методы работы с объектами: Keys, Values, Entries, FromEntries](#методы-работы-с-объектами-keys-values-entries-fromentries)
+
+ECMAScript Data Types & Expressions
+
+Arrays Built-in Methods
+  - [Methods of Arrays](#methods-of-arrays)
+    - [map vs forEach](#map-vs-foreach)
+    - [find, filter, some, includes](#find-filter-some-includes)
+    - [reduce](#reduce)
+    - [sort](#sort)
+
+Arrays Iterating, Sorting, Filtering
+
+JavaScript in Browser:
+
+Global Object Window
+
+Events Basics
+  - [Что такое DOM?](#что-такое-dom)
+  - [Как получить DOM элемент в JS?](#как-получить-dom-элемент-в-js)
+  - [События DOM](#события-dom)
+  - [Распространение событий (всплытие и перехват)](#распространение-событий-всплытие-и-перехват)
+  - [Делегирование событий](#делегирование-событий)
+
+
+Events Propagation / Preventing
+
+Timers
+  - [setTimeout и setInterval](#settimeout-и-setinterval)
+    - [setTimeout с нулевой задержкой](#settimeout-с-нулевой-задержкой)
+
+Web Storage API & Cookies
+  - [Куки (cookies)](#куки-cookies)
+  - [Web Storages](#web-storages)
+    - [LocalStorage](#localstorage)
+    - [SessionStorage](#sessionstorage)
+    - [Установка, получение и очистка значений](#установка-получение-и-очистка-значений)
+
+Date & Time (optional)
+
+Design Patterns
+
+Intermediate Knowledge
+
 
   - [Parsing (Парсинг), Reflow (Пересчёт макета), и Repaint (Перерисовка)](#parsing-парсинг-reflow-пересчёт-макета-и-repaint-перерисовка)
     - [Parsing (Парсинг)](#parsing-парсинг)
@@ -31,15 +106,15 @@ Functions
   - [Строгий vs Нестрогий Сравнения](#строгий-vs-нестрогий-сравнения)
   
   - [Шаблонные Строки (Template Strings)](#шаблонные-строки-template-strings)
-  - [Стрелочные функции vs Обычные функции](#стрелочные-функции-vs-обычные-функции)
+  
   - [IIFE](#iife)
-  - [Параметры по умолчанию в функциях](#параметры-по-умолчанию-в-функциях)
-  - [Оператор расширения для аргументов функции (`...`)](#оператор-расширения-для-аргументов-функции-)
+  
+  
   
   - [Использование "var" и поведение переменных без "var"](#использование-var-и-поведение-переменных-без-var)
-  - [Механизм обхода лексического окружения](#механизм-обхода-лексического-окружения)
+  
   - [Что такое сборщик мусора? Зачем он нужен?](#что-такое-сборщик-мусора-зачем-он-нужен)
-  - [Методы работы с объектами: Keys, Values, Entries, FromEntries](#методы-работы-с-объектами-keys-values-entries-fromentries)
+  
   - [Методы работы с массивами: Flat, FlatMap, Includes, Array.from()](#методы-работы-с-массивами-flat-flatmap-includes-arrayfrom)
   - [Типы данных. Примитивные типы и ссылочные (объектные) типы](#типы-данных-примитивные-типы-и-ссылочные-объектные-типы)
   - [`Set`, `Map`, `WeakSet`, и `WeakMap` в JavaScript](#set-map-weakset-и-weakmap-в-javascript)
@@ -58,18 +133,15 @@ Functions
   - [Где хранится ссылка на прототип](#где-хранится-ссылка-на-прототип)
   - [Создание недоступного объекта](#создание-недоступного-объекта)
   - [Методы из `Object.prototype`](#методы-из-objectprototype)
-  - [Как работают замыкания](#как-работают-замыкания)
-  - [Что такое контекст](#что-такое-контекст)
-  - [Что такое глобальный контекст](#что-такое-глобальный-контекст)
-  - [Как определяется контекст во время выполнения?](#как-определяется-контекст-во-время-выполнения)
-  - [Как привязать контекст, возможно ли привязать его дважды?](#как-привязать-контекст-возможно-ли-привязать-его-дважды)
-  - [Когда контекст теряется?](#когда-контекст-теряется)
+  
+  
   - [Базовый синтаксис классов в JavaScript](#базовый-синтаксис-классов-в-javascript)
   - [Наследование классов](#наследование-классов)
   - [Использование `super()`](#использование-super)
   - [Приватные и защищенные свойства и методы](#приватные-и-защищенные-свойства-и-методы)
   - [Использование "instanceof"](#использование-instanceof)
   - [Статические свойства и методы](#статические-свойства-и-методы)
+
   - [Что такое сборщик мусора?](#что-такое-сборщик-мусора)
   - [Зачем нужен сборщик мусора?](#зачем-нужен-сборщик-мусора)
   - [Блокирующий код](#блокирующий-код)
@@ -86,30 +158,12 @@ Functions
     - [Макрозадачи (Macrotasks)](#макрозадачи-macrotasks)
     - [Микрозадачи (Microtasks)](#микрозадачи-microtasks)
     - [Как работают вместе](#как-работают-вместе)
-  - [setTimeout и setInterval](#settimeout-и-setinterval)
-    - [setTimeout с нулевой задержкой](#settimeout-с-нулевой-задержкой)
-  - [Methods of Object](#methods-of-object)
-    - [Object.keys()](#objectkeys)
-    - [Object.values()](#objectvalues)
-    - [for...in](#forin)
-  - [Methods of Arrays](#methods-of-arrays)
-    - [map vs forEach](#map-vs-foreach)
-    - [find, filter, some, includes](#find-filter-some-includes)
-    - [reduce](#reduce)
-    - [sort](#sort)
-  - [Клонирование объектов в JavaScript](#клонирование-объектов-в-javascript)
+  
+  
   - [Promises vs Callbacks](#promises-vs-callbacks)
   - [Состояния Promise](#состояния-promise)
-  - [Что такое DOM?](#что-такое-dom)
-  - [Как получить DOM элемент в JS?](#как-получить-dom-элемент-в-js)
-  - [События DOM](#события-dom)
-  - [Распространение событий (всплытие и перехват)](#распространение-событий-всплытие-и-перехват)
-  - [Делегирование событий](#делегирование-событий)
-  - [Куки (cookies)](#куки-cookies)
-  - [Web Storages](#web-storages)
-    - [LocalStorage](#localstorage)
-    - [SessionStorage](#sessionstorage)
-    - [Установка, получение и очистка значений](#установка-получение-и-очистка-значений)
+  
+
 - [TypeScript](#typescript)
   - [TS basic types](#ts-basic-types)
     - [boolean](#boolean)
